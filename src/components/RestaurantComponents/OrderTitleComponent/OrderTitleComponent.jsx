@@ -10,7 +10,7 @@ const OrderTitleComponent = () => {
   return <div className={css.outerDiv}>
     <div className={css.innerDiv}>
         <div className={css.left}>
-            <div className={css.title}>Toryroom</div>
+            <div className={css.title}>Toyroom</div>
             <div className={css.specials}>subtittle</div>
             <div className={css.address}>Santa Cruz, Bombay</div>
             <div className={css.timings}>
@@ -26,8 +26,8 @@ const OrderTitleComponent = () => {
             </div>
         </div>
         <div className={css.right}>
-            <RatingUtil rating="4.1" count="601" txt="Dining Reviews" />
-            <RatingUtil rating="3.6" count="37.3k" txt="Delivery Reviews" />
+            <RatingUtil rating="4.1" count="601" txt="Reviews" />
+            
         </div>
     </div>
   </div>

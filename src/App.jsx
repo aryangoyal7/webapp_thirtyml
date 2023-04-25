@@ -12,8 +12,8 @@ import Footer from './components/Footer/Footer'
 // Use of images and their paths
 import orderOnlineImg from '/images/stags.jpg'
 import diningoutImg from '/images/couple.jpg'
-import proandproplusImg from '/images/proandproplus.jpg'
-import nightlifeandclubsImg from '/images/nightlifeandclubs.jpg'
+import proandproplusImg from '/images/event.jpeg'
+import nightlifeandclubsImg from '/images/ladies.avif'
 
 import css from './App.module.css'
 
