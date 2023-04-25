@@ -219,8 +219,7 @@ let ShowCase = () => {
         </div>
         <div className={css.showCaseDiv}>
             <div className={css.showcaseComps}>
-                <CategorySelectionComp title="Clubs" imgSrc={delivery1} imgSrc2={delivery2} color="#FCEEC0" comp='delivery' isActive={isActive} setIsActive={setIsActive} />
-                <CategorySelectionComp title="Dinning" imgSrc={dinning1} imgSrc2={dinning2} color="#EDF4FF" comp='dinning' isActive={isActive} setIsActive={setIsActive} />
+                <CategorySelectionComp title="Clubs" imgSrc={nightlife1} imgSrc2={nightlife1} color="#FCEEC0" comp='delivery' isActive={isActive} setIsActive={setIsActive} />
                 <CategorySelectionComp title="Bars and Pubs" imgSrc={nightlife1} imgSrc2={nightlife2} color="#EDF4FF" comp='nightlife' isActive={isActive} setIsActive={setIsActive} />
             </div>
         </div>
