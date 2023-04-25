@@ -17,8 +17,9 @@ let GetTheApp = () => {
                 <img className={css.mobileImg} src={mobileImg} alt="mobile img" />
             </div>
             <div className={css.rightSec}>
-                <div className={css.title}>Get the Tomato App</div>
-                <div className={css.tag}>We will send you a link, open it on your phone to download the app</div>
+                <div className={css.title}>Thirtyml Mobile App Coming soon!</div>
+                <div className={css.tag}>Meanwhile enjoy our Website</div>
+                <div className={css.tag}>Share us your details, we'll share the link to the as soon as it's up!</div>
                 <div className={css.inputBoxes}>
                     <div className={css.radiosBtns}>
                         <div className={css.radioBtn} onClick={() => setInpuutType(true)}>
@@ -45,11 +46,8 @@ let GetTheApp = () => {
                     </div>
                 </div>
                 <div className={css.appLinks}>
-                    <div className={css.title2}>Download app from</div>
-                    <div className={css.appBoxes}>
-                        <img className={css.appImg} src={appstoreImg} alt="appstore" />
-                        <img className={css.appImg} src={playstoreImg} alt="playstore" />
-                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
