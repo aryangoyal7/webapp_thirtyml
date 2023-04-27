@@ -11,8 +11,8 @@ function DownloadAppUtil() {
   return <> 
     <div className={css.outerDiv} onClick={() => setModal(true)}>
       <div className={css.left}>
-          <div className={css.txt}>Online ordering is only supported on the mobile app</div>
-          <div className={css.btnTxt}>Download the App</div>
+          <div className={css.txt}>Mobile app coming soon!</div>
+          
       </div>
       <div className={css.right}>
           <img src={ZomatoDownloadApp} alt="Download app image"  className={css.img} />

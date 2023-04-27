@@ -14,6 +14,7 @@ import orderOnlineImg from '/images/stags.jpg'
 import diningoutImg from '/images/couple.jpg'
 import proandproplusImg from '/images/event.jpeg'
 import nightlifeandclubsImg from '/images/ladies.avif'
+import Carousel from './components/HomeComponents/HomePageBanner/carousel'
 
 import css from './App.module.css'
 

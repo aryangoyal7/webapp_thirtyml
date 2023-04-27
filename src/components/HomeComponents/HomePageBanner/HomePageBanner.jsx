@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Navbar from '../../Navbars/NavigationBar/NavigationBar'
 import MobileNavbar from '../../Navbars/MobileNavbar/MobileNavbar';
 import SearchBar from '../../../utils/SearchBar/SearchBar'
+import Carousel from './carousel';
 
 import css from './HomePageBanner.module.css'
 
@@ -19,11 +20,11 @@ let HomePageBanner = () => {
                 <div className={css.title}>thirtyml</div>
                 <div className={css.tag}>The Youth Clubbing app, handcrafted here in  <span className={css.bld}>Bombay</span></div>
                 <div className={css.searchbar}>
-                    <SearchBar />
                 </div>
             </div>
         </div>
     </div>) : <MobileNavbar setToggleMenu={setToggleMenu} toogleMenu={toogleMenu} />
+ 
 
     return toggleBanner;
 }

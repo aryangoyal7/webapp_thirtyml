@@ -20,83 +20,36 @@ import hariyalikebab from '/images/hariyalikebab.jpg'
 const OrderOnlineFieldComponent = () => {
 
   const [isActive, setIsActive] = useState({
-    recommended: true
+    
   });
   const [foodType, setFoodType] = useState({
-    veg: false, 
-    egg: false
+    
   });
 
   const offerTrackData = [
-    {txt1: "0% OFF up to ₹80 + 10% OFF up to ₹75 Paytm Cashback", txt2: "use code PAYTMBASH"},
-    {txt1: "Flat ₹125 OFF", txt2: "use code ICICINB"}
+    {txt1: "CashBack offers", txt2: "on this card"},
+    {txt1: "Credit card offers", txt2: "on this card"}
   ]
 
   const initialValues = {veg: false, egg: false}
 
   const foodItemsData = {
-    recommended: [
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"}
+    Couple: [
+      {mustTry:true, ttl:"Standing table", votes:"12", price:"2000", desc:"Standing table with Full Cover!", },
+      {mustTry:true, ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",},
+     
     ],
-    biryanis: [
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "egg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "egg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "egg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"}
+    Stags: [
+      {mustTry:true, ttl:"Standing table", votes:"12", price:"3000", desc:"Standing table with Full Cover!", },
+      {mustTry:true, ttl:"Without Table", votes:"12", price:"2000", desc:"Full Cover of the payment",}
     ],
-    indian: [
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"}
+     Ladies: [
+      {mustTry:true, ttl:"Standing table", votes:"12", price:"2000", desc:"Standing table with Full Cover!", },
+      {mustTry:true, ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",}
     ],
-    tandoori: [
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "egg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"}
-    ],
-    chinese: [
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"}
-    ],
-    "Noodles & Fried Rice": [
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"}
-    ],
-    soups: [
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "egg"}
-    ],
-    roti: [
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"}
-    ],
-    dessert: [
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, imgSrc:hariyalikebab, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"},
-      {mustTry:true, ttl:"Hariyali Kebab", votes:"12", price:"1400", desc:"Tandoori Prawns [6 Pieces]+Fish Tikka [6 Pieces]+Pathar ka Gosht [6 Pieces]+Boti Kebab [6 Pieces]+Schezwan Tikka [6 Pieces]+Andhra Kebab [6 Pieces]+Seek Kebab [6 Pieces]", vegNonveg:vegIcon, foodType: "veg"}
+    Table: [
+      {mustTry:true, ttl:"Standing table", votes:"12", price:"2000", desc:"Standing table with Full Cover!", },
+      {mustTry:true, ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",}
     ],
   }
 
@@ -148,18 +101,18 @@ const OrderOnlineFieldComponent = () => {
       </div>
       <div className={css.rightBox}>
         <div className={css.hSec}>
-            <div className={css.ttl}>Order Online</div>
-            <SmallSearchBarUtil placeholder="Search within menu" />
+            <div className={css.ttl}>Pay at Venue</div>
+            
         </div>
         <div className={css.tabBox}>
           <div className={css.tagLine}>
             <img src={compassIcon} className={css.clockIcon} alt="live track" />
-            <span className={css.tabTxt}>Live track your order</span>
+            <span className={css.tabTxt}>Get your name in ths Guestlist!</span>
           </div>
           <div className={css.hr} />
           <div className={css.tagLine}>
-            <img src={clockIcon} className={css.clockIcon} alt="time" />
-            <span className={css.tabTxt}>30 min</span>
+            
+            
           </div>
         </div>
         <div className={css.offersTrack}>
@@ -170,8 +123,8 @@ const OrderOnlineFieldComponent = () => {
         <div className={css.formBox}>
           <Formik initialValues={initialValues}>
               <Form className={css.form}>
-                    <CheckBoxUtil label="Veg Only" name="veg" onChange={() => setFoodType(val => val?.veg ? {veg: false, egg: false} : {veg: true, egg: false})} checked={foodType?.veg || foodType?.egg} />
-                    {foodType?.veg || foodType?.egg ? <CheckBoxUtil label="contains egg" name="egg" onChange={() => setFoodType(val => val?.egg ? {veg: true, egg: false} : {veg: true, egg: true})} checked={foodType?.egg} /> : ""}
+                    
+                    
                </Form>
           </Formik>
         </div>

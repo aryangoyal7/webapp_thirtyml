@@ -12,6 +12,7 @@ import ShowcaseCard from '../../utils/Cards/ShowcaseCard/ShowcaseCard'
 import ExploreOptionsNearMe from '../../components/HomeComponents/ExploreOptionsNearMe/ExploreOptionsNearMe'
 import Footer from '../../components/Footer/Footer'
 import CarouselUtil from '../../utils/CarouselUtil/CarouselUtil'
+import Promotions from '../../components/RestaurantComponents/slider';
 
 import dinning1 from '/icons/dinning1.png';
 import dinning2 from '/icons/dinning2.png';
@@ -241,13 +242,7 @@ let ShowCase = () => {
                     Top Clubs for you
                 </div>
                 <div className={css.rollerCarosuel}>
-                    <CarouselUtil>
-                        {brandsCardScroll?.map((val, id) => {
-                            return <div className={css.cardW} key={id}>
-                                <CircleCard2 imgSrc={val.imgSrc} name={val.name} time={val.time} />
-                            </div>
-                        })}
-                    </CarouselUtil>
+                    <Promotions/>
                 </div>
             </div>
         </div> : null}

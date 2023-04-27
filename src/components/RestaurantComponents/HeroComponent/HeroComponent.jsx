@@ -2,9 +2,9 @@ import React from 'react'
 
 import css from './HeroComponent.module.css'
 
-import food1Img from '/images/food1.jpg';
-import food2Img from '/images/food2.jpg';
-import food3Img from '/images/food3.jpg';
+import food1Img from '/images/toyroom3.jpg';
+import food2Img from '/images/toyroom2.jpg';
+import food3Img from '/images/toyroom1.jpg';
 
 import GalleryImgCard from '../../../utils/Cards/RestaurantHeroCards/GalleryImgCard/GalleryImgCard'
 import AddPhotosCard from '../../../utils/Cards/RestaurantHeroCards/AddPhotosCard/AddPhotosCard'
