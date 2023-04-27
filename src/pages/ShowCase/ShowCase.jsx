@@ -45,7 +45,7 @@ import chapathiImg from '/images/Food/toyroom2.jpg';
 import chickenSCImg from '/images/Food/chicken.png';
 import fishImg from '/images/Food/toyroom3.jpg';
 import icecreamImg from '/images/Food/toyroom4.jpg';
-import kfcSCImg from '/images/Food/dragonfly.jpg';
+import kfcSCImg from '/images/Food/Dragonfly.jpg';
 import pizzaSCImg from '/images/Food/pizza.png';
 
 import { orderOnlinePage, diningOutPage, nightLifePage } from '../../helpers/constants'
