@@ -8,7 +8,6 @@ import HeroComponent from '../../components/RestaurantComponents/HeroComponent/H
 import OrderTitleComponent from '../../components/RestaurantComponents/OrderTitleComponent/OrderTitleComponent'
 import OrderBodyComponent from '../../components/RestaurantComponents/OrderBodyComponent/OrderBodyComponent'
 import Footer from '../../components/Footer/Footer'
-import Banner from '../../components/RestaurantComponents/banner'
 
 
 
@@ -18,10 +17,7 @@ const RestaurantPage = () => {
     <NavigationBar />
     <div className={css.innerDiv}>
         <div className={css.breadcrumb}>
-            Home
-            /
-            India
-            /
+           
             Bombay
             /
             Bandra

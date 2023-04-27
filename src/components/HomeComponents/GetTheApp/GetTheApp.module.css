@@ -97,7 +97,7 @@
 }
 
 .btn {
-    background-color: var(--bg-redish1);
+    background-color:rgb(171, 27, 171);
     border: none;
     padding: 10px 20px;
     color: var(--color-white);

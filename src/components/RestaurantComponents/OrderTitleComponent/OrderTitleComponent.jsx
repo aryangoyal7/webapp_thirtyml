@@ -11,7 +11,7 @@ const OrderTitleComponent = () => {
     <div className={css.innerDiv}>
         <div className={css.left}>
             <div className={css.title}>Toyroom</div>
-            <div className={css.specials}>subtittle</div>
+            <div className={css.specials}></div>
             <div className={css.address}>Santa Cruz, Bombay</div>
             <div className={css.timings}>
                 <span className={css.opORclo}>Open now -</span>

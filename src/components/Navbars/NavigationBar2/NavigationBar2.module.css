@@ -7,6 +7,8 @@
     z-index: 5;
     color: var(--color-white);
     border-bottom: var(--brd2);
+    background-color: #222;
+    transition: all 0.3s ease;
 }
 
 .navbarInner {
@@ -57,6 +59,7 @@
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
+    color: #fff;
 }
 
 .searchBar {}
@@ -80,6 +83,7 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    border-color: #fff;
 }
 
 .profileName {
@@ -148,3 +152,24 @@
         width: 50%;
     }
 }
+.menuItem {
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  .menuItem:hover {
+    color: #ccc;
+  }
+  Copy code
+.profile:hover .profilePic {
+  transform: scale(1.1);
+}
+.profile:hover .menu {
+  display: block;
+}
+.menu {
+    background-color: #333;
+    color: #fff;
+  }
+  .menuItemLink:hover {
+    background-color: #444;
+  }

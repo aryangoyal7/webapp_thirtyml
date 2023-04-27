@@ -7,7 +7,7 @@ import Carousel from './carousel';
 
 import css from './HomePageBanner.module.css'
 
-import banner from '/banners/Thirtymllogo.png'
+import banner from '/banners/banner1.jpg'
 
 let HomePageBanner = () => {
     let [toogleMenu, setToggleMenu] = useState(true);

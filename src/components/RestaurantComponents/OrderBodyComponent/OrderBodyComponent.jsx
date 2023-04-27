@@ -50,10 +50,10 @@ const OrderBodyComponent = () => {
     <div className={css.innerDiv}>
         <div className={css.menu}>
             <NavLink to={`/${city}/${hotel}/`} className={isActiveClass}>
-                Overview
+                Upcoming event
             </NavLink>
             <NavLink to={`/${city}/${hotel}/order`} className={isActiveClass}>
-                Order Online
+                Booking for Now
             </NavLink>
             <NavLink to={`/${city}/${hotel}/reviews`} className={isActiveClass}>
                 Reviews

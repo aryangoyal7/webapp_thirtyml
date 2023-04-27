@@ -1,7 +1,12 @@
 .outerDiv{
     width: 100%;
     height: 100%;
-    margin: 0.5rem 0;   
+    margin: 0.5rem 0;  
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
 }
 
 .innerDiv{
@@ -14,6 +19,7 @@
 .left{
     width: 50%;
     height: 100%;
+    
 }
 
 .right{
@@ -27,6 +33,8 @@
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-title-text);
+    color: rgb(255, 255, 255);
+    
 }
 
 .specials{

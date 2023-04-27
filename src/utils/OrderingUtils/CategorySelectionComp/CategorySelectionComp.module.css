@@ -5,6 +5,8 @@
     border: none;
     cursor: pointer;
     text-decoration: none;
+    
+    
 }
 
 .outerDivActive {
@@ -12,7 +14,7 @@
     width: 200px;
     height: 70px;
     cursor: pointer;
-    border-bottom: 3px solid var(--color-pinky);
+    border-bottom: 3px solid var(--color-purple);
 }
 
 .innerDiv {
@@ -31,6 +33,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    color: blueviolet;
 }
 
 .img {
@@ -45,12 +48,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    color: blueviolet;
 }
 
 .titleActive {
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--color-pinky);
+    color: var(--color-purple);
 }
 
 .title {
@@ -58,3 +62,5 @@
     font-weight: 600;
     color: var(--color-title-text);
 }
+
+

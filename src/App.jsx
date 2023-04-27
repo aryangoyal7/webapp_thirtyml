@@ -33,7 +33,7 @@ function App() {
         <SmallCard imgSrc={nightlifeandclubsImg} text="Ladies special booking" link={'/show-case?page=' + nightLifePage} />
       </div>
       <Collections />
-      <PopularPlaces />
+      
     </div>
     
     

@@ -4,22 +4,20 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-
-import kfcImg from '/icons/Brands/toyroom1.jpg';
-import pizzahutImg from '/icons/Brands/Tryst .jpg';
-import scoopsImg from '/icons/Brands/toyroom2.jpg';
-
-
-
 import Tryst from '/images/Food/Tryst.png';
 import toyroom1 from '/images/Food/toyroom1.jpg';
 import toyroom2 from '/images/Food/toyroom2.jpg';
-import chickenSCImg from '/images/Food/chicken.png';
 import toyroom3 from '/images/Food/toyroom3.jpg';
 import toyroom4 from '/images/Food/toyroom4.jpg';
 import dragonfly from '/images/Food/dragonfly.jpg';
-import pizzaSCImg from '/images/Food/pizza.png';
+import trystt from '/images/Food/trystt.png';
+import slide1 from '/images/Food/slide1.png';
+import slide2 from '/images/Food/slide2.jpeg';
+import slide3 from '/images/Food/slide3.jpeg';
+import slide4 from '/images/Food/slide4.jpeg';
+import slide5 from '/images/Food/slide5.jpeg';
+
+
 
 const Img = styled.img`
   cursor: pointer;
@@ -35,7 +33,7 @@ const Img = styled.img`
 `;
 
 const Wrapper = styled.header`
-  max-width: 100%;
+  max-width: 120%;
   min-width: 100%;
   position: relative;
   margin: auto;
@@ -45,9 +43,8 @@ const Wrapper = styled.header`
 `;
 
 const settings = {
-  dots: false,
   infinite: false,
-  speed: 500,
+  speed: 300,
   slidesToShow: 4,
   slidesToScroll: 1,
 };
@@ -60,74 +57,75 @@ function Promotions() {
           <Slider {...settings}>
             <div className="col">
               <Img
-                src= {Tryst}
+                src= {slide1}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-               src= {toyroom3}
+               src= {slide4}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-                src={dragonfly}
+                src={slide3}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-                src= {toyroom2}
+                src= {slide5}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-               src= {toyroom4}
+               src= {slide1}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-                src= {toyroom2}
+                src= {slide4}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-                src= {toyroom1}
+                src= {slide3}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-                src= {Tryst}
+                src= {slide2}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-                src= {toyroom2}
+                src= {slide3}
                 alt="promotion img"
               />
             </div>
             <div className="col">
               <Img
-                src= {dragonfly}
+                src= {slide1}
                 alt="promotion img"
               />
             </div>
             <div className="col">
-                          <Img
-                              src= {toyroom2}
-               
+              <Img
+                src= {slide4}
                 alt="promotion img"
               />
             </div>
             <div className="col">
-                          <Img
-                              src= {toyroom2}
+              <Img
+                src= {slide2}
+
+
                
                 alt="promotion img"
               />

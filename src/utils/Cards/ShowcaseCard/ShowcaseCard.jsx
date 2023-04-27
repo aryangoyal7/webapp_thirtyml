@@ -4,8 +4,8 @@ import css from './ShowcaseCard.module.css';
 
 import biryani from '/images/profilebanner.jpg'
 import upArrowIcon from '/icons/up-arrow-icon.png';
-import maxSAfety from '/icons/maxsafty.png';
-import safeDelivery from '/icons/safe-delivery.png';
+import maxSAfety from '/icons/heart.jpeg';
+import safeDelivery from '/icons/fire.jpeg';
 import star from '/icons/star.png';
 
 let ShowcaseCard = (props) => {

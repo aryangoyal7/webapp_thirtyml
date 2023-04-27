@@ -66,7 +66,6 @@ let ShowCase = () => {
 
     let filters = {
         delivery: [
-            { text: "Filter", leftIcon: filtersIcon },
             { text: "Location", leftIcon: deliveryTimeIcon },
             { text: "Rating: 4.0+" },
             { text: "Freate Offers" },
@@ -86,19 +85,7 @@ let ShowCase = () => {
             { text: "Pubs & Bars" },
         ]
     }
-    if (page === orderOnlinePage) {
-        filterBoxes = filters?.delivery?.map((val, id) => {
-            return <div key={id}><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
-        })
-    } else if (page === diningOutPage) {
-        filterBoxes = filters?.dinning?.map((val, id) => {
-            return <div key={id}><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
-        })
-    } else if (page === nightLifePage) {
-        filterBoxes = filters?.nightLife?.map((val, id) => {
-            return <div key={id}><FilterBox leftIcon={val?.leftIcon ?? null} rightIcon={val?.rightIcon ?? null} text={val.text} /></div>
-        })
-    }
+    
 
     const brandsCardScroll = [
         {
@@ -208,15 +195,7 @@ let ShowCase = () => {
     return <div className={css.outerDiv}>
         <NavigationBar2 />
         <div className={css.innerDiv}>
-            <div className={css.breadcrumb}>
-                Home
-                /
-                India
-                /
-                Bombay
-                /
-                
-            </div>
+            
         </div>
         <div className={css.showCaseDiv}>
             <div className={css.showcaseComps}>
@@ -227,7 +206,7 @@ let ShowCase = () => {
         {page !== orderOnlinePage ?
             <div className={css.innerDiv2}>
                 <div className={css.w7}>
-                    <Collections />
+                   
                 </div>
             </div> : null}
         <div className={css.innerDiv3}>
@@ -238,9 +217,6 @@ let ShowCase = () => {
        
         {page === orderOnlinePage ? <div className={css.innerDiv5}>
             <div className={css.w7}>
-                <div className={css.innerDiv5Title}>
-                    Top Clubs for you
-                </div>
                 <div className={css.rollerCarosuel}>
                     <Promotions/>
                 </div>
@@ -249,7 +225,7 @@ let ShowCase = () => {
         <div className={css.innerDiv6}>
             <div className={css.w7}>
                 <div className={css.innerDiv6Title}>
-                    {page === orderOnlinePage ? "Top Parties near you" : page === diningOutPage ? "Dine-Out Restaurants in Gachibowli" : "Nightlife Restaurants in Gachibowli"}
+                    {page === orderOnlinePage ? "" : page === diningOutPage ? "Dine-Out Restaurants in Bombay" : "Nightlife Restaurants in Bombay"}
                 </div>
                 <div className={css.innerDiv6Body}>
                     {items?.map((item, id) => {
@@ -258,7 +234,6 @@ let ShowCase = () => {
                 </div>
             </div>
         </div>
-        <ExploreOptionsNearMe />
         <Footer />
     </div>
 }

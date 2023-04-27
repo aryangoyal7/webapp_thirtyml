@@ -3,6 +3,7 @@
     height: auto;
     display: flex;
     justify-content: center;
+    background-color: rgb(49, 47, 47);
 }
 
 .innerDiv {
@@ -18,14 +19,14 @@
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
-    color: var(--color-title-text);
+    color:white;
 }
 
 .tagLine {
     font-size: 1.3rem;
     margin: 1.5rem 0;
     text-align: center;
-    color: var(--color-p1-text);
+    color: white;
 }
 
 .cards {
