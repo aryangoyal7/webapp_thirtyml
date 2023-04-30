@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Navbar from '../../Navbars/NavigationBar/NavigationBar'
 import MobileNavbar from '../../Navbars/MobileNavbar/MobileNavbar';
 import SearchBar from '../../../utils/SearchBar/SearchBar'
-import Carousel from './carousel';
+
 
 import css from './HomePageBanner.module.css'
 
