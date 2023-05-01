@@ -35,21 +35,21 @@ const OrderOnlineFieldComponent = () => {
 
   const foodItemsData = {
     Couple: [
-      {mustTry:true, ttl:"Standing table", votes:"12", price:"2000", desc:"Standing table with Full Cover!", },
-      {mustTry:true, ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",},
+      { ttl:"Standing table", votes:"12", price:"6900", desc:"Standing table with Full Cover!", },
+      { ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",},
      
     ],
     Stags: [
-      {mustTry:true, ttl:"Standing table", votes:"12", price:"3000", desc:"Standing table with Full Cover!", },
-      {mustTry:true, ttl:"Without Table", votes:"12", price:"2000", desc:"Full Cover of the payment",}
+      { ttl:"Standing table", votes:"12", price:"3000", desc:"Standing table with Full Cover!", },
+      { ttl:"Without Table", votes:"12", price:"2000", desc:"Full Cover of the payment",}
     ],
      Ladies: [
-      {mustTry:true, ttl:"Standing table", votes:"12", price:"2000", desc:"Standing table with Full Cover!", },
-      {mustTry:true, ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",}
+      { ttl:"Standing table", votes:"12", price:"2000", desc:"Standing table with Full Cover!", },
+      { ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",}
     ],
     Table: [
-      {mustTry:true, ttl:"Standing table", votes:"12", price:"2000", desc:"Standing table with Full Cover!", },
-      {mustTry:true, ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",}
+      {ttl:"Standing table", votes:"12", price:"2000", desc:"Standing table with Full Cover!", },
+      { ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",}
     ],
   }
 
@@ -161,7 +161,7 @@ const OrderOnlineFieldComponent = () => {
         </div>
       </div>
     </div>
-    <DownloadAppUtil />
+   
   </div>
 }
 

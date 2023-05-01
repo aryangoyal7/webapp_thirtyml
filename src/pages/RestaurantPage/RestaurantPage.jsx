@@ -15,15 +15,7 @@ const RestaurantPage = () => {
 
   return <div className={css.outerDiv}>
     <NavigationBar />
-    <div className={css.innerDiv}>
-        <div className={css.breadcrumb}>
-           
-            Bombay
-            /
-            Bandra
-            
-        </div>
-    </div>
+    
     <HeroComponent />
     <div className={css.innerDiv2}>
       <OrderTitleComponent />
