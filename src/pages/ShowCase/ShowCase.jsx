@@ -194,34 +194,17 @@ let ShowCase = () => {
 
     return <div className={css.outerDiv}>
         <NavigationBar2 />
-        <div className={css.innerDiv}>
-            
-        </div>
+        
         <div className={css.showCaseDiv}>
             <div className={css.showcaseComps}>
                 <CategorySelectionComp title="Clubs" imgSrc={nightlife1} imgSrc2={nightlife1} color="#FCEEC0" comp='delivery' isActive={isActive} setIsActive={setIsActive} />
                 <CategorySelectionComp title="Bars and Pubs" imgSrc={nightlife1} imgSrc2={nightlife2} color="#EDF4FF" comp='nightlife' isActive={isActive} setIsActive={setIsActive} />
             </div>
         </div>
-        {page !== orderOnlinePage ?
-            <div className={css.innerDiv2}>
-                <div className={css.w7}>
-                   
-                </div>
-            </div> : null}
-        <div className={css.innerDiv3}>
-            <div className={css.filtersDiv}>
-                {filterBoxes}
-            </div>
-        </div>
+        
        
-        {page === orderOnlinePage ? <div className={css.innerDiv5}>
-            <div className={css.w7}>
-                <div className={css.rollerCarosuel}>
-                    <Promotions/>
-                </div>
-            </div>
-        </div> : null}
+       
+       
         <div className={css.innerDiv6}>
             <div className={css.w7}>
                 <div className={css.innerDiv6Title}>
