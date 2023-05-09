@@ -1,13 +1,15 @@
 const asyncHandler = require("express-async-handler");
 const Contact = require("../models/booking");
-//@desc Get all contacts
+const ClubPricing = require("../models/ClubPricing");
+
+
+//@desc Get all bookings
 //@route GET /api/contacts
 //@access private
 const getbookings = asyncHandler(async (req, res) => {
-  const bookings = await Contact.find({ user_id: req.user.id });
+  const bookings = await booking.find({ user_id: req.user.id });
   res.status(200).json(booking);
 });
-
 
 
 
@@ -43,14 +45,15 @@ const createbooking = asyncHandler(async (req, res) => {
 //@desc Get contact
 //@route GET /api/contacts/:id
 //@access private
-const getContact = asyncHandler(async (req, res) => {
-  const contact = await Contact.findById(req.params.id);
-  if (!contact) {
+const getBooking = asyncHandler(async (req, res) => {
+  const booking = await booking.findById(req.params.id);
+  if (!booking) {
     res.status(404);
-    throw new Error("Contact not found");
+    throw new Error("booking not found");
   }
-  res.status(200).json(contact);
+  res.status(200).json(booking);
 });
+
 
 
 
@@ -59,48 +62,51 @@ const getContact = asyncHandler(async (req, res) => {
 //@desc Update contact
 //@route PUT /api/contacts/:id
 //@access private
-const updateContact = asyncHandler(async (req, res) => {
-  const contact = await Contact.findById(req.params.id);
-  if (!contact) {
+const updatePricing = asyncHandler(async (req, res) => {
+  const pricing = await ClubPricing.findById(req.params.id);
+  if (!pricing) {
     res.status(404);
-    throw new Error("Contact not found");
+    throw new Error("pricing not found");
   }
 
-  if (contact.user_id.toString() !== req.user.id) {
+  if (pricing.user_id.toString() !== req.user.id) {
     res.status(403);
-    throw new Error("User don't have permission to update other user contacts");
+    throw new Error("User don't have permission to update other user pricing");
   }
 
-  const updatedContact = await Contact.findByIdAndUpdate(
+  const updatedPrice = await Contact.findByIdAndUpdate(
     req.params.id,
     req.body,
     { new: true }
   );
 
-  res.status(200).json(updatedContact);
+  res.status(200).json(updatedPrice);
 });
+
+
+
 
 //@desc Delete contact
 //@route DELETE /api/contacts/:id
 //@access private
-const deleteContact = asyncHandler(async (req, res) => {
-  const contact = await Contact.findById(req.params.id);
-  if (!contact) {
+const deleteBooking = asyncHandler(async (req, res) => {
+  const booking = await booking.findById(req.params.id);
+  if (!booking) {
     res.status(404);
-    throw new Error("Contact not found");
+    throw new Error("booking not found");
   }
-  if (contact.user_id.toString() !== req.user.id) {
+  if (booking.user_id.toString() !== req.user.id) {
     res.status(403);
-    throw new Error("User don't have permission to update other user contacts");
+    throw new Error("User don't have permission to update other user bookings");
   }
-  await Contact.deleteOne({ _id: req.params.id });
-  res.status(200).json(contact);
+  await booking.deleteOne({ _id: req.params.id });
+  res.status(200).json(booking);
 });
 
 module.exports = {
   getbookings,
   createbooking,
-  getContact,
-  updateContact,
-  deleteContact,
+  getBooking,
+  updatePricing,
+  deleteBooking,
 };

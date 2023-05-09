@@ -7,12 +7,13 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 .leftBox{
-    width: 25%;
-    height: 100vh;
-    margin-right: 10px;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
     padding: 1rem 0;
 }
 
@@ -33,8 +34,8 @@
 }
 
 .rightBox{
-    width: 75%;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     overflow-y: scroll;
 }
 
@@ -58,6 +59,7 @@
     width: 100%;
     height: 20px;
     display: flex;
+    margin-bottom: 1rem;
 }
 
 .hr{
@@ -101,6 +103,7 @@
 
 .form{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .itemsBox{
@@ -123,22 +126,24 @@
     border-bottom: var(--brd4);
 }
 
-@media all and (max-width: 780px){    
+@media all and (min-width: 780px){    
     .innerDiv{
-        display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
     }
     
     .leftBox{
-        width: 100%;
+        width: 25%;
+        height: 100vh;
+        margin-right: 10px;
     }
 
     .rightBox{
-        width: 100%;
+        width: 75%;
+        height: 100vh;
     }
     
     .hSec{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 }
