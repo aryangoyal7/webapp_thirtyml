@@ -1,6 +1,5 @@
-const { default: InternalPreviewGroup } = require("antd/es/image/PreviewGroup");
 const mongoose = require("mongoose");
-
+const Schema = mongoose.Schema;
 const userSchema = mongoose.Schema(
   {
     username: {

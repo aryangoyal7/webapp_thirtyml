@@ -5,13 +5,10 @@ const PricingSchema = new Schema({
     type: String,
     required: true
   },
-  Time: {
-    type: Time,
-    default: Time.now()
-    },
+ 
     Price: {
-        type: Int16Array,
-        required: True
+        type: String,
+        required: true
     }
     
 

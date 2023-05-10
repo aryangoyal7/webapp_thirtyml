@@ -1,16 +1,19 @@
 const express = require("express");
 const router = express.Router();
 const {
-  getContacts,
-  createContact,
-  getContact,
-  updateContact,
-  deleteContact,
-} = require("../controllers/contactController");
+  
+  getbookings,
+  /* 
+   createbooking,
+  */
+  getBooking,
+  updatePricing,
+  deleteBooking,
+} = require("../controllers/BookingController");
 const validateToken = require("../middleware/validateTokenHandler");
 
 router.use(validateToken);
-router.route("/").get(getContacts).post(createContact);
-router.route("/:id").get(getContact).put(updateContact).delete(deleteContact);
+router.route("/").get(getbookings);
+router.route("/:id").get(getBooking).put(updatePricing).delete(deleteBooking);
 
 module.exports = router;

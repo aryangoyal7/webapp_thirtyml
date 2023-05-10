@@ -1,6 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const Contact = require("../models/booking");
 const ClubPricing = require("../models/ClubPricing");
+//import package
 
 
 //@desc Get all bookings
@@ -105,7 +106,9 @@ const deleteBooking = asyncHandler(async (req, res) => {
 
 module.exports = {
   getbookings,
-  createbooking,
+  /* 
+   createbooking,
+  */
   getBooking,
   updatePricing,
   deleteBooking,
