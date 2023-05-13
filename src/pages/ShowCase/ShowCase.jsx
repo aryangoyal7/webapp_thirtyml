@@ -12,7 +12,6 @@ import ShowcaseCard from '../../utils/Cards/ShowcaseCard/ShowcaseCard'
 import ExploreOptionsNearMe from '../../components/HomeComponents/ExploreOptionsNearMe/ExploreOptionsNearMe'
 import Footer from '../../components/Footer/Footer'
 import CarouselUtil from '../../utils/CarouselUtil/CarouselUtil'
-import Promotions from '../../components/RestaurantComponents/slider';
 
 import dinning1 from '/icons/dinning1.png';
 import dinning2 from '/icons/dinning2.png';
