@@ -1,21 +1,7 @@
 import {useEffect, useState} from 'react'
 import {Formik, Form} from 'formik'
-
 import css from './OrderOnlineFieldComponent.module.css'
-
-import CheckBoxUtil from '../../../../../utils/FormUtils/CheckBoxUtil/CheckBoxUtil'
-
-
-import DownloadAppUtil from '../../../../../utils/RestaurantUtils/DownloadAppUtil/DownloadAppUtil'
-import SmallSearchBarUtil from '../../../../../utils/RestaurantUtils/SmallSearchBarUtil/SmallSearchBarUtil'
-import OfferTrackUtil from '../../../../../utils/RestaurantUtils/OfferTrackUtil/OfferTrackUtil'
 import FoodItemProduct from '../../../../../utils/RestaurantUtils/FoodItemProduct/FoodItemProduct'
-
-import compassIcon from '/icons/compass.png'
-import clockIcon from '/icons/clock.png'
-import vegIcon from '/icons/veg.png'
-
-import hariyalikebab from '/images/hariyalikebab.jpg'
 
 const OrderOnlineFieldComponent = () => {
 
@@ -26,21 +12,16 @@ const OrderOnlineFieldComponent = () => {
     
   });
 
-  const offerTrackData = [
-    {txt1: "CashBack offers", txt2: "on this card"},
-    {txt1: "Credit card offers", txt2: "on this card"}
-  ]
-
   const initialValues = {veg: false, egg: false}
 
   const foodItemsData = {
     Couple: [
-      { ttl:"Standing table", votes:"12", price:"6900", desc:"Standing table with Full Cover!", },
-      { ttl:"Without Table", votes:"12", price:"1000", desc:"Full Cover of the payment",},
+      { ttl:"Standing table",  price:"6900", desc:"Standing table with Full Cover!", },
+      { ttl:"Without Table", price:"1000", desc:"Full Cover of the payment",},
      
     ],
     Stags: [
-      { ttl:"Standing table", votes:"12", price:"3000", desc:"Standing table with Full Cover!", },
+      { ttl:"Standing table",  price:"3000", desc:"Standing table with Full Cover!", },
       { ttl:"Without Table", votes:"12", price:"2000", desc:"Full Cover of the payment",}
     ],
      Ladies: [
@@ -106,7 +87,7 @@ const OrderOnlineFieldComponent = () => {
         </div>
         <div className={css.tabBox}>
           <div className={css.tagLine}>
-            <img src={compassIcon} className={css.clockIcon} alt="live track" />
+            
             <span className={css.tabTxt}>Get your name in ths Guestlist!</span>
           </div>
           <div className={css.hr} />
@@ -115,11 +96,7 @@ const OrderOnlineFieldComponent = () => {
             
           </div>
         </div>
-        <div className={css.offersTrack}>
-          {offerTrackData?.map((val, id) => {
-            return <OfferTrackUtil key={id} txt1={val.txt1} txt2={val.txt2} />
-          })}
-        </div>
+       
         <div className={css.formBox}>
           <Formik initialValues={initialValues}>
               <Form className={css.form}>

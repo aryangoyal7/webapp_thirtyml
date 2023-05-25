@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import { Link, useLocation } from 'react-router-dom';
 
 
@@ -43,7 +42,8 @@ let ShowCase = () => {
             proExtra: "40",
             name: "ToyRoom",
             rating: '3.6',
-            imgSrc: biryaniSCImg
+            imgSrc: biryaniSCImg,
+            clubID: "646cb0188e7a67d8266447eb"
         },
         {
             promoted: false,
@@ -54,7 +54,8 @@ let ShowCase = () => {
             proExtra: "40",
             name: "Tryst",
             rating: '2.6',
-            imgSrc: biryaniSCImg2
+            imgSrc: biryaniSCImg2,
+            clubID: ""
         },
         {
             promoted: true,
@@ -65,7 +66,8 @@ let ShowCase = () => {
             proExtra: "40",
             name: "DragonFly",
             rating: '4.6',
-            imgSrc: chapathiImg
+            imgSrc: chapathiImg,
+            clubID: ""
         },
         {
             promoted: false,
@@ -76,7 +78,8 @@ let ShowCase = () => {
             proExtra: "40",
             name: "The Game Placio",
             rating: '4.9',
-            imgSrc: fishImg
+            imgSrc: fishImg,
+            clubID: ""
         },
         {
             promoted: true,
@@ -87,7 +90,8 @@ let ShowCase = () => {
             proExtra: "40",
             name: "Toy Room",
             rating: '4.6',
-            imgSrc: icecreamImg
+            imgSrc: icecreamImg,
+            clubID: ""
         },
         {
             promoted: false,
@@ -98,29 +102,50 @@ let ShowCase = () => {
             proExtra: "40",
             name: "Dragonfly",
             rating: '2.8',
-            imgSrc: kfcSCImg
+            imgSrc: kfcSCImg,
+            clubID: ""
         },
         
         
         
     ]
 
-    return <div className={css.outerDiv}>
-        <NavigationBar2 />
-        <div className={css.innerDiv6}>
-            <div className={css.w7}>
-                <div className={css.innerDiv6Title}>
-                    {page === orderOnlinePage ? "" : page === diningOutPage ? "" : ""}
-                </div>
-                <div className={css.innerDiv6Body}>
-                    {items?.map((item, id) => {
-                        return <ShowcaseCard key={id} promoted={item.promoted} time={item.time} offB={item.offB} proExtraB={item.proExtraB} off={item.off} proExtra={item.proExtra} name={item.name} rating={item.rating} imgSrc={item.imgSrc} />
-                    })}
+    
+    return (
+        <div className={css.outerDiv}>
+            <NavigationBar2 />
+            <div className={css.innerDiv6}>
+                <div className={css.w7}>
+                    <div className={css.innerDiv6Title}>
+                        {page === orderOnlinePage ? "" : page === diningOutPage ? "" : ""}
+                    </div>
+                    <div className={css.innerDiv6Body}>
+                        {items?.map((item, id) => (
+                            <Link key={id} to={`/showcase/${item.clubID}`}>
+                                <ShowcaseCard
+                                    promoted={item.promoted}
+                                    time={item.time}
+                                    offB={item.offB}
+                                    proExtraB={item.proExtraB}
+                                    off={item.off}
+                                    proExtra={item.proExtra}
+                                    name={item.name}
+                                    rating={item.rating}
+                                    imgSrc={item.imgSrc}
+                                />
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             </div>
+            <Footer />
         </div>
-        <Footer />
-    </div>
-}
+    );
+};
 
 export default ShowCase;
+
+/*
+while routing make each restraunt page has a id by how which it will be routed
+
+*/

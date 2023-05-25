@@ -8,8 +8,9 @@ import HeroComponent from '../../components/RestaurantComponents/HeroComponent/H
 import OrderTitleComponent from '../../components/RestaurantComponents/OrderTitleComponent/OrderTitleComponent'
 import OrderBodyComponent from '../../components/RestaurantComponents/OrderBodyComponent/OrderBodyComponent'
 import Footer from '../../components/Footer/Footer'
-
-
+/*
+why is MUI not importing as a component
+*/
 
 const RestaurantPage = () => {
 
